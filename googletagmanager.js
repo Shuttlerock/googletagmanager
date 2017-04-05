@@ -7,7 +7,8 @@
     root.googletagmanager = factory();
   }
 }(this, function () {
-  var window = this;
+  // See https://github.com/cofounders/googletagmanager/issues/4
+  //var window = this;
   var document = window.document || {title: '', hidden: false};
 
   return function googletagmanager(id, datalayer) {
